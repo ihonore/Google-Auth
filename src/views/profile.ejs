@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>Google Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body        { padding-top:80px; word-wrap:break-word; }
+        .well{
+            width: 60vw;
+            height: 50vh;
+            margin-left: 12vw;
+            background-color: rgb(167, 245, 241);
+        }
+        h3{
+            text-align: center;
+        }
+        .p{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        img{
+            border:5px solid rgb(43, 148, 247);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1> Profile Page</h1>
+        <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+        <div class=" info-container col-sm-8">
+            <div class="well">
+                <h3 class="text-primary">Google Profile</h3>
+
+                    <div class="p">
+                        <div>
+                        <strong>Email</strong>: <%= email %><br>
+                        <strong>Name</strong>: <%= name %><br>
+                        </div>
+                        <div>
+                            <img src="<%=pic%>" width="100" height="100" alt="">
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
